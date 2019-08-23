@@ -1,0 +1,324 @@
+@import 'customize';
+
+//  fonts 
+@font-face {
+  font-family: "NerisSemiBold";
+  src : url("../fonts/NerisSemiBold.eot");
+  src : url("../fonts/NerisSemiBold.ttf");
+  src : url("../fonts/NerisSemiBold.woff");
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src : url("../fonts/RobotoBold.eot");
+  src : url("../fonts/RobotoBold.ttf");
+  src : url("../fonts/RobotoBold.woff");
+}
+
+@font-face {
+  font-family: "RobotoLight";
+  src : url("../fonts/RobotoLight.eot");
+  src : url("../fonts/RobotoLight.ttf");
+  src : url("../fonts/RobotoLight.woff");
+}
+
+@font-face {
+  font-family: "RobotoRegular";
+  src : url("../fonts/RobotoRegular.eot");
+  src : url("../fonts/RobotoRegular.ttf");
+  src : url("../fonts/RobotoRegular.woff");
+}
+////////////////////////////////////////////////////
+///////////////////////////////////////////////////
+
+body {
+  overflow-x: hidden;
+}
+
+
+//  HEADER
+.header {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  max-height: 800px;
+  color: #fff;
+  padding-top: 40px;
+}
+// logo
+.navbar > .navbar-brand {
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.navbar-nav {
+  .dropdown-toggle::after {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+// header  links
+.nav-item > .nav-link {
+  color: #fff;
+  font-family: RobotoLight, sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+// buton sign in
+.signin {
+  border-radius: 21px;
+  color: #fff;
+  font-family: NerisSemiBold, sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  height: 36px;
+  padding: 0 33px;
+  border: 2px solid #fff;
+  margin-right: 25px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+// default  button
+.btn__green {
+  border-radius: 40px;
+  color: #fff;
+  font-family: NerisSemiBold, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  height: 60px;
+  padding: 0 80px;
+  border: none;
+  outline: none;
+  background: linear-gradient(to left, #0a9976, #189c5c);
+  cursor: pointer;
+  display: block;
+}
+
+.title {
+  max-width: 1100px;
+  margin-top: 180px;
+
+  h1 {
+    font-family: NerisSemiBold, sans-serif;
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    line-height: 65px;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: RobotoLight, sans-serif;
+    text-align: center;
+    color: #c1bebd;
+    margin-top: 40px;
+  }
+
+  &__btn {
+    margin: 80px auto;
+  }
+}
+
+///////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+//   cards
+
+.cards {
+  background: linear-gradient(to right, #0a9976, #189c5c);
+  padding: 110px 0 120px;
+}
+
+.card {
+  background: transparent;
+  border: none;
+  text-align: center;
+  position: relative;
+
+  img {
+    max-width: 100%;
+    width: 70px;
+    height: 75px;
+    display: block;
+    margin: auto;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 50px;
+    top: -10px;
+    background-image: url(../img/ok.png);
+    width: 60px;
+    height: 60px;
+  }
+
+  &-text {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    color: #fff;
+    padding-top: 20px;
+  }
+}
+
+//////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+//  section  exchange rates
+.exchange {
+  background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 300px;
+  height: 300px;
+}
+
+.input-group-prepend {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 2px;
+    height: 30px;
+    background: #ededed;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 197px;
+    top: 15px;
+    width: 2px;
+    height: 30px;
+    background: #ededed;
+  }
+
+  &:first-child:after {
+    left: 0;
+  }
+}
+
+.btn__dropdown {
+  font-size: 18px;
+  font-family: RobotoRegular, sans-serif;
+  line-height: 20px;
+  color: #292727;
+  background-color: #fff;
+  border: none;
+  outline: none !important;
+  height: 60px;
+  padding-left: 20px;
+
+  &__first {
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+  }
+
+  img {
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+    padding: 0px 1px 2px 0px;
+  }
+}
+
+.form__value {
+  font-size: 18px;
+  font-family: RobotoRegular, sans-serif;
+  border: none;
+}
+
+.form__btn {
+  position: absolute;
+  right: 0;
+  z-index: 200;
+  padding: 0 65px;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////@at-root
+//footer
+
+.footer {
+  background: #1e1e1e;
+  padding-top: 100px;
+  padding-bottom: 60px;
+
+  .footer__copy {
+    margin-top: 62px;
+    font-family: RobotoLight, sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    color: #5f5f5f;
+  }
+
+  h3 {
+    font-family: RobotoBold, sans-serif;
+    font-size: 18px;
+    color: #adadad;
+    margin-bottom: 35px;
+  }
+
+  .footer__title {
+    margin-bottom: 0;
+  }
+
+  .nav-link {
+    color: #5f5f5f;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0.5rem 0;
+  }
+
+  .nav__mail {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    color: #5f5f5f !important;
+    padding-top: 34px;
+  }
+}
+// social  icons
+.social {
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 14px;
+  margin-bottom: 80px;
+
+  li {
+    margin-right: 30px;
+  }
+}
+
+.footer__text {
+  color: #454545;
+  font-size: 12px;
+  font-family: RobotoLight, sans-serif;
+  line-height: 25px;
+}
+
+.visa__cards {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: -40px;
+
+  li {
+    font-family: RobotoLight, sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: #646464;
+    margin-right: 15px;
+  }
+}

@@ -1,0 +1,71 @@
+@import "../bootstrap/scss/bootstrap";
+
+//  container fluid для header
+@mixin make-container() {
+    width: 100%;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid {
+    @include make-container();
+}
+
+//  media
+@media (min-width: 1070px) {
+    .container {
+        max-width: 992px !important;
+    }
+}
+
+@media (min-width: 1170px) {
+    .container {
+        max-width: 1140px !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1170px !important;
+    }
+}
+
+//////////////////////////
+.dropdown-toggle::after {
+    margin-left: 110px;
+    margin-right: 20px;
+}
+
+.form-control {
+    max-width: 155px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
